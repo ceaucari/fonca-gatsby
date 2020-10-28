@@ -1,6 +1,33 @@
 import React from "react"
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
 import MainLayout from "../components/mainLayout"
 
-export default function Home() {
-  return <MainLayout>Home content here.</MainLayout>
+const styles = {
+  image: {
+    width: "500px",
+  },
 }
+
+export default ({ data }) => (
+  <MainLayout title="The new old faces">
+    <Img
+      fluid={data.file.childImageSharp.fluid}
+      style={styles.image}
+      alt="Main image"
+    />
+  </MainLayout>
+)
+
+export const query = graphql`
+  query {
+    file(relativePath: { eq: "main.jpeg" }) {
+      childImageSharp {
+        fluid(maxWidth: 500, quality: 100) {
+          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluidLimitPresentationSize
+        }
+      }
+    }
+  }
+`

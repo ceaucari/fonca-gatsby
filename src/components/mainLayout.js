@@ -1,4 +1,5 @@
 import React from "react"
+import { Helmet } from "react-helmet"
 import Sidebar from "./sidebar"
 import Header from "./header"
 
@@ -18,17 +19,25 @@ const styles = {
   },
 }
 
-function MainLayout({ children }) {
+function MainLayout({ title, children }) {
   return (
-    <div style={styles.container}>
-      <Header headerText="The new old faces" />
-      <div style={styles.main}>
-        <div className="sidebar-wrapper" style={styles.sidebar}>
-          <Sidebar />
+    <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <meta name="Description" content="Put your description here." />
+        <title>{title}</title>
+        <link rel="canonical" href="https://ceaucari.github.io/fonca-gatsby/" />
+      </Helmet>
+      <div style={styles.container}>
+        <Header headerText={title} />
+        <div style={styles.main}>
+          <div className="sidebar-wrapper" style={styles.sidebar}>
+            <Sidebar />
+          </div>
+          <div style={styles.mainContent}>{children}</div>
         </div>
-        <div style={styles.mainContent}>{children}</div>
       </div>
-    </div>
+    </>
   )
 }
 
