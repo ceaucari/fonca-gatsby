@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{w2l6:function(e,n,t){"use strict";t.r(n);var a=t("q1tI"),c=t.n(a),l=t("1BER");n.default=function(e){e.data;return c.a.createElement(l.a,{title:"The new old faces"},c.a.createElement("h1",null,"404"))}}}]);
+//# sourceMappingURL=component---src-pages-404-js-0b3bcbab0549de1fc431.js.map
