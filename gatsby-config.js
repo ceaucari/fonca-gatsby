@@ -7,8 +7,8 @@
 const path = require("path")
 
 module.exports = {
-  /* Your site config here */
-  pathPrefix: "/fonca-gatsby",
+  pathPrefix: `/fonca-gatsby`,
+  assetPrefix: `/fonca-gatsby`,
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
