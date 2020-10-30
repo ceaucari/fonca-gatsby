@@ -30,6 +30,11 @@ export default function Sidebar() {
             Series 2
           </Link>
         </li>
+        <li>
+          <Link style={styles.link} to="/series/3">
+            Series 3
+          </Link>
+        </li>
       </ul>
     </div>
   )

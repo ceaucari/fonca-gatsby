@@ -16,6 +16,7 @@ const styles = {
   },
   mainContent: {
     marginLeft: "30px",
+    width: "100%",
   },
 }
 
