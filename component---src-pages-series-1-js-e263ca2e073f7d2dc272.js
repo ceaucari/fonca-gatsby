@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{VwrX:function(e,n,t){"use strict";t.r(n),t.d(n,"default",(function(){return a}));var r=t("q1tI"),i=t.n(r),u=t("1BER");function a(){return i.a.createElement(u.a,{title:"Series 1"},"Series 1 here.")}}}]);
-//# sourceMappingURL=component---src-pages-series-1-js-e263ca2e073f7d2dc272.js.map
