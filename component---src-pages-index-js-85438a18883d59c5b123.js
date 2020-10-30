@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{RXBc:function(e,a,n){"use strict";n.r(a),n.d(a,"query",(function(){return u}));var t=n("q1tI"),r=n.n(t),c=n("9eSz"),i=n.n(c),l=n("1BER");a.default=function(e){var a=e.data;return r.a.createElement(l.a,{title:"The new old faces"},r.a.createElement("h1",null,"HOME"),r.a.createElement(i.a,{fixed:a.file.childImageSharp.fixed}))};var u="3025956074"}}]);
+//# sourceMappingURL=component---src-pages-index-js-85438a18883d59c5b123.js.map
