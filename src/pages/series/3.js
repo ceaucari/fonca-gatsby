@@ -11,10 +11,12 @@ const GridGallery = ({ data }) => {
   }))
 
   return (
-    <MainLayout title="Series 3">
+    // <MainLayout title="Series 3">
+    <>
       <h2>Series 3 here.</h2>
       <Gallery images={images} />
-    </MainLayout>
+    </>
+    // </MainLayout>
   )
 }
 
