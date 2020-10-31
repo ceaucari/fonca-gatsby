@@ -13,7 +13,7 @@ const styles = {
 
 export default ({ data }) => (
   <MainLayout>
-    {/* <h1>HOME</h1> */}
+    <h1>HOME</h1>
     {/* <Img
       fluid={data.file.childImageSharp.fluid}
       style={styles.image}
