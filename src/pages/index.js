@@ -5,19 +5,25 @@ import MainLayout from "../components/mainLayout"
 
 const styles = {
   image: {
-    width: "500px",
+    // width: "500px",
+    margin: "0 auto",
+    display: "block",
   },
 }
 
 export default ({ data }) => (
-  <MainLayout title="The new old faces">
-    <h1>HOME</h1>
+  <MainLayout>
+    {/* <h1>HOME</h1> */}
     {/* <Img
       fluid={data.file.childImageSharp.fluid}
       style={styles.image}
       alt="Main image"
     /> */}
-    <Img fixed={data.file.childImageSharp.fixed} />
+    <Img
+      fixed={data.file.childImageSharp.fixed}
+      style={styles.image}
+      alt="Main image"
+    />
   </MainLayout>
 )
 

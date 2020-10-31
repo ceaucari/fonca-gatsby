@@ -8,7 +8,6 @@ const path = require("path")
 
 module.exports = {
   pathPrefix: `/fonca-gatsby`,
-  assetPrefix: `/fonca-gatsby`,
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,

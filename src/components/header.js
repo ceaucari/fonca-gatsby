@@ -7,6 +7,6 @@ const styles = {
   },
 }
 
-export default function Header(props) {
-  return <h1 style={styles.header}>{props.headerText}</h1>
+export default function Header() {
+  return <h1 style={styles.header}>The new old faces</h1>
 }

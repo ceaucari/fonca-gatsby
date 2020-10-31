@@ -6,16 +6,17 @@ import Header from "./header"
 const styles = {
   container: {
     margin: "0 auto",
-    maxWidth: "800px",
+    maxWidth: "1200px",
   },
   main: {
     display: "flex",
+    margin: "0 15px",
   },
   sidebar: {
     width: "200px",
   },
   mainContent: {
-    marginLeft: "30px",
+    padding: "0 15px",
     width: "100%",
   },
 }
