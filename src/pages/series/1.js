@@ -4,12 +4,6 @@ import MainLayout from "../../components/mainLayout"
 import Gallery from "@browniebroke/gatsby-image-gallery"
 import "@browniebroke/gatsby-image-gallery/dist/style.css"
 
-const styles = {
-  galleryWrapper: {
-    paddingLeft: "10px",
-  },
-}
-
 export const query = graphql`
   query ImagesSeries1 {
     galleryImages: allFile(
@@ -42,7 +36,7 @@ const Series1 = ({ data }) => {
   return (
     <MainLayout title="Series 3">
       <h2>Serie 1</h2>
-      <div style={styles.galleryWrapper}>
+      <div className="pl-2">
         <Gallery images={images} />
       </div>
     </MainLayout>
