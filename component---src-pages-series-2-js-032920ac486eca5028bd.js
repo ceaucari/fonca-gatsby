@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[9],{QHzn:function(e,n,t){"use strict";t.r(n),t.d(n,"default",(function(){return u}));var r=t("q1tI"),a=t.n(r),i=t("1BER");function u(){return a.a.createElement(i.a,{title:"Series 2 WORKS"},a.a.createElement("h2",null,"Serie 2"))}}}]);
+//# sourceMappingURL=component---src-pages-series-2-js-032920ac486eca5028bd.js.map
