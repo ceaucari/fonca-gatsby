@@ -17,6 +17,9 @@ export default function Sidebar() {
         <li className="block mb-2">
           <Link to="/series/3">Series 3</Link>
         </li>
+        <li className="block mb-2">
+          <Link to="/series/4">Series 4</Link>
+        </li>
       </ul>
     </div>
   )

@@ -34,7 +34,7 @@ const Series1 = ({ data }) => {
   }))
 
   return (
-    <MainLayout title="Series 1">
+    <MainLayout title="Series 1 :)">
       <h2>Serie 1</h2>
       <div className="pl-2">
         <Gallery images={images} />
