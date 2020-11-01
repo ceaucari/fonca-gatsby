@@ -5,7 +5,7 @@ import MainLayout from "../components/mainLayout"
 
 export default ({ data }) => (
   <MainLayout>
-    <div className="block text-center">
+    <div className="block text-center mt-10">
       <Img fixed={data.file.childImageSharp.fixed} alt="Main image" />
     </div>
   </MainLayout>

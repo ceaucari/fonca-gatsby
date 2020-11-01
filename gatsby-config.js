@@ -29,5 +29,13 @@ module.exports = {
     //   resolve: `gatsby-plugin-purgecss`,
     //   options: { tailwind: true },
     // },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /svgs/, // See below to configure properly
+        },
+      },
+    },
   ],
 }

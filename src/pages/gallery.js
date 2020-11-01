@@ -1,6 +1,6 @@
 import { graphql } from "gatsby"
 import React from "react"
-import MainLayout from "../../components/mainLayout"
+import MainLayout from "../components/mainLayout"
 import Gallery from "@browniebroke/gatsby-image-gallery"
 import "@browniebroke/gatsby-image-gallery/dist/style.css"
 
@@ -11,12 +11,9 @@ const GridGallery = ({ data }) => {
   }))
 
   return (
-    // <MainLayout title="Series 3">
-    <>
-      <h2>Series 3 here.</h2>
+    <MainLayout title="Gallery">
       <Gallery images={images} />
-    </>
-    // </MainLayout>
+    </MainLayout>
   )
 }
 

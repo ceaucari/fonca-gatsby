@@ -11,6 +11,7 @@ module.exports = {
       fontFamily: {
         serif: ["Merriweather", ...defaultTheme.fontFamily.serif],
         sans: ["Montserrat", ...defaultTheme.fontFamily.sans],
+        cormorant: ["Cormorant", ...defaultTheme.fontFamily.serif],
       },
     },
     container: {
