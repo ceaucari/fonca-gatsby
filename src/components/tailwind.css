@@ -7,8 +7,20 @@
   display: flex !important;
 }
 
-.main-menu {
-  transition: all 0.5s ease;
+.hamburger-box {
+  width: 30px !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hamburger-inner,
+.hamburger-inner:before,
+.hamburger-inner:after {
+  background-color: #131313 !important;
+  height: 3px !important;
+  width: 28px !important;
 }
 
 .slick-arrow:before {

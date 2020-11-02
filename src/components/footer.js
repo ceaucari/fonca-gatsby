@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-import MainMenu from "./mainMenu"
 
 export default function Footer() {
   return (
