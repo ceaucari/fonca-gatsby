@@ -3,8 +3,12 @@
 @tailwind utilities;
 
 /* Menu toggle */
-#menu-toggle:checked + #menu {
-  display: block;
+.hamburger {
+  display: flex !important;
+}
+
+.main-menu {
+  transition: all 0.5s ease;
 }
 
 .slick-arrow:before {
