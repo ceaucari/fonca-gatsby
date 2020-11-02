@@ -5,13 +5,11 @@ import "slick-carousel/slick/slick-theme.css"
 import Slider from "react-slick"
 import Img from "gatsby-image"
 
-// export default function Series1() {
 const Series1 = ({ data }) => {
   const images = data.images.edges.map(({ node }) => ({
     ...node.childImageSharp,
-    // caption: node.childImageSharp.thumb.originalName,
   }))
-  console.log(images)
+
   const settings = {
     dots: true,
     infinite: true,
@@ -19,6 +17,22 @@ const Series1 = ({ data }) => {
     slidesToShow: 1,
     slidesToScroll: 1,
   }
+
+  const renderSlider = () => (
+    <Slider {...settings}>
+      {images.map((image, index) => (
+        <div key={index}>
+          <Img
+            fluid={image.full}
+            alt="Main image"
+            imgStyle={{ objectFit: "contain" }}
+          />
+          <div className="slide-caption text-center">SOME TEXT HERE</div>
+        </div>
+      ))}
+    </Slider>
+  )
+
   return (
     <MainLayout title="Series 1">
       <h2 className="text-2xl">Serie 1</h2>
@@ -27,20 +41,7 @@ const Series1 = ({ data }) => {
         eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
         voluptua.
       </p>
-      <div className="m-20">
-        <Slider {...settings}>
-          {images.map((image, index) => (
-            <div key={index}>
-              <Img
-                fluid={image.full}
-                alt="Main image"
-                imgStyle={{ objectFit: "contain" }}
-              />
-              <div className="slide-caption text-center">SOME TEXT HERE</div>
-            </div>
-          ))}
-        </Slider>
-      </div>
+      <div className="m-20">{renderSlider()}</div>
       <p>
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
         eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
