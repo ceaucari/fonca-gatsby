@@ -11,10 +11,10 @@ function MainLayout({ title, children }) {
         <title>{title}</title>
         <link rel="canonical" href="https://ceaucari.github.io/fonca-gatsby/" />
       </Helmet>
+      <Header headerText={title} />
       <div className="container">
-        <Header headerText={title} />
         <div className="flex mx-1">
-          <div className="w-full">{children}</div>
+          <div className="w-full mb-20">{children}</div>
         </div>
       </div>
     </>

@@ -25,19 +25,20 @@ export default function MainMenu() {
       <input className="hidden" type="checkbox" id="menu-toggle" />
 
       <div
-        className="hidden lg:flex lg:items-center lg:w-auto w-full"
+        className="hidden lg:flex lg:items-center lg:w-auto w-full lg:pt-0"
         id="menu"
       >
-        <nav className="inline-block main-menu">
-          <ul className="lg:flex items-center justify-between text-base text-gray-700 pt-4 lg:pt-0">
+        <nav className="main-menu">
+          <ul className="lg:flex items-center justify-between text-base text-gray-700 pt-4">
             {links.map((link, index) => (
-              <Link
-                key={index}
-                to={link.route}
-                className="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400"
-              >
-                {link.text}
-              </Link>
+              <li key={index}>
+                <Link
+                  to={link.route}
+                  className="lg:p-4 py-3 px-2 block border-b-2 border-transparent lg:hover:border-indigo-400 hover:bg-gray-300 lg:hover:bg-transparent"
+                >
+                  {link.text}
+                </Link>
+              </li>
             ))}
           </ul>
         </nav>

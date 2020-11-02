@@ -1,9 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;600&display=swap");
 
 /* Menu toggle */
 #menu-toggle:checked + #menu {
   display: block;
+}
+
+.slick-arrow:before {
+  color: black !important;
+}
+
+.slick-slide,
+.slick-slide .gatsby-image-wrapper,
+.slick-slide img {
+  max-height: 400px !important;
+  padding-bottom: 40px;
+}
+
+.slick-slide .slide-caption {
+  position: relative;
+  bottom: 25px;
 }
